@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+}
+
+.logo{
+    margin: 5px;
+    margin-left: 15px;
+    float: left;
+    width: 70px;
+}
+
+nav{
+    display: flex;
+    margin: 10px;
+    margin-top: 25px;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.art1{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.art1 img{
+    width: 400px;
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+.art1 p{
+    margin-left: 15px;
+    font-size: 20px;
+    color: azure;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 10px;
+    text-align: center;
+    margin-right: 40px;
+}
+
+section h2{
+    margin-top: 20px;
+    margin-left: 15px;
+    color: azure;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.otzyv{
+    margin-top: 20px;
+    margin-left: 15px;
+    color: azure;
+    text-shadow: 1px 1px 1px #000;
+    text-align: center;
+}
+
+main{
+    background-color: #DD2255;
+    width: 100%;
+}
+
+.art1 article{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: center;
+}
+
+.art1 article p{
+    margin-left: 40px;
+}
+
+.pictrs{
+    width: 150px;
+}
+
+figure{
+    margin-top: 25px;
+}
+
+.pics, .pics2{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.pics figure, .pics2 figure{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+.pics figure img, .pics2 figure img{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    border: 2px solid;
+    box-shadow: 1px 1px 1px gray;
+}
+
+.pics figure figcaption, .pics2 figure figcaption{
+    color: aliceblue;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 20px;
+    width: 100%;
+}
+
+.info1, .info2,.info3{
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+}
+
+.icons a img{
+    height: 30px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    max-height: 30px;
+}
+
+.icons a{
+    width: fit-content;
+    text-decoration: none;
+    text-align: center;
+    margin: 4px;
+    margin-top: 30px;
+}
+
+.info1 a, .info2 a,.info3 a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.info1 h3, .info2 h3, .info3 h3{
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (max-width:850px){
+    .art1{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .pics, .pics2{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+}
+
+@media (max-width:500px){
+    .art1{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .pics, .pics2{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .art1 img{
+        width: 80%;
+        border-radius: 50px;
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+
+    .pics figure img, .pics2 figure img{
+        justify-content: center;
+        width: 300px;
+        height: 300px;
+        border-radius: 10px;
+        border: 2px solid;
+        box-shadow: 1px 1px 1px gray;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 10px;
+        padding: 20px;
+        width: 100%;
+    }
+
+    nav{
+        display: flex;
+        margin: 10px;
+        margin-top: 25px;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+}
